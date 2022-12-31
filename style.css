@@ -1,0 +1,945 @@
+
+body {
+    font-family: Ultra, Dancing Script, Patua One, sans-serif;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.super-container {
+    position: relative;
+    width: 1350px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background: linear-gradient(-45deg, #780206, #061161, #FFFFFF);
+        background-size: 400% 400%;
+        animation: gradient 350ms ease 16600ms infinite;
+} 
+
+.main-container {
+    position: relative;
+    width: 1350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    position: relative;
+    width: 1200px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.block {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    min-width: 1350px;
+    height: 657px;
+
+    background: linear-gradient(#AA076B, #61045F);
+    opacity: 1;
+
+    z-index: 10;
+}
+
+                                                                      /** Button   */
+
+.start {
+    position: absolute;
+    top: 300px;
+    left: 560px;
+    width: 260px;
+    height: 80px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: Dancing Script;
+    font-size: 30px;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+            7px 7px 20px 0px rgba(0, 0, 0, .1),
+            4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+}
+
+
+.party {
+    border: none;
+    background: rgb(251, 33, 117);
+    background: linear-gradient(0deg, rgba(251, 33, 117, 1) 0%, rgba(234, 76, 137, 1) 100%);
+    color: #fff;
+    overflow: hidden;
+}
+
+.party:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.party:before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    top: -180px;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background-color: #fff;
+    animation: shiny-btn1 2s ease-in-out infinite;
+}
+
+.party:hover {
+    opacity: .7;
+}
+
+.party:active {
+    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .3),
+        -4px -4px 6px 0 rgba(116, 125, 136, .2),
+        inset -4px -4px 6px 0 rgba(255, 255, 255, .2),
+        inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+}
+
+/* .block1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    min-width: 700px;
+    height: 645px;
+
+    background-color: rgb(128, 0, 0);
+    z-index: 3;
+
+}
+
+.block2 {
+    position: absolute;
+    top: 0px;
+    left: 700px;
+
+    min-width: 710px;
+    height: 645px;
+
+    background-color: rgb(34, 0, 128);
+    z-index: 3;
+} */
+
+                                                               /**   Crowd picture   */
+
+.crowd {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    min-width: 1250px;
+    height: 628px;
+
+    background-color: rgb(0, 0, 255, 0);
+    background-image: url(./images/crowd.png);
+    background-repeat: no-repeat;
+    background-position: 30px 40px;
+    background-size: contain;
+
+    overflow: hidden;
+}
+
+                                                           /** Black bottom backrround  */
+.black-ground {
+    position: absolute;
+    top: 485px;
+    left: 0px;
+    
+    width: 100%;
+    height: 160px;
+
+    background-color: rgb(0, 0, 0);
+}
+
+                                                           /** Logo    */
+
+.block-logo {
+    position: relative;
+    top: 80px;
+    left: 450px;
+    display: inline-flex;
+    
+}
+
+.logo {
+    position: absolute;
+    top: -150px;
+    left: -640px;
+
+    animation: scaleAnimate2 2s linear 1000ms infinite;
+    
+}
+
+.logo-accent {
+    position: absolute;
+    font-size: 50px;
+    text-align: center;
+
+    background-image: linear-gradient(200deg, #abbaab, #ffffff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+
+.logo-accent2 {
+    position: absolute;
+    top: 50px;
+    left: 90px;
+    display: inline-block;
+    font-family: Patua One;
+    letter-spacing: 6px;
+
+    font-size: 25px;
+    font-style: italic;
+
+    background-image: linear-gradient(#e6e7e6,#ffffff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    animation: scaleAnimate2 2s linear 1000ms infinite;
+}
+
+
+                                                             /**   DJ   */
+
+
+.dj {
+    position: relative;
+    top: 150px;
+    left: 300px;
+    width: 50px;
+    height: 50px;
+}
+
+.cute-face {
+    position: absolute;
+    top: 10px;
+    left: 260px;
+
+    width: 50px;
+    height: 50px;
+
+    animation: scaleAnimate 1s linear 1000ms infinite;
+    
+}
+
+.right-hand {
+    position: absolute;
+    top: 37px;
+    left: 18px;
+    
+    width: 10px;
+    height: 10px;
+
+     animation: translateAnimateY 300ms linear 1000ms infinite;         
+}
+
+.left-hand {
+    position: absolute;
+    top: 58px;
+    left: 325px;
+
+    width: 10px;
+    height: 10px;
+
+    animation: translateAnimateY 300ms linear 1000ms infinite;
+}
+
+
+                                                                /**  DJ  console  */
+
+.dj-console {
+    position: absolute;
+    top: 460px;
+    left: 300px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 549px;
+    height: 130px;
+
+    color: #FFFFFF;
+
+    background-color: rgb(56, 56, 56);
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 20px;
+
+    background: crimson;
+    box-shadow: 0 -150px 70px -120px teal inset,
+            0 -220px 70px -120px yellowgreen inset,
+            0 -280px 70px -120px gold inset;
+
+    animation: background 4s infinite alternate;
+}
+
+.dj-console .text {
+    position: absolute;
+    top: 85px;
+    left: 120px;
+
+    font-size: 25px;
+    font-family: Dancing Script ;
+}
+
+
+
+                                                                /**  Main circle   */
+.circle  {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+    left: 500px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    background: crimson;
+    box-shadow: 0 -150px 70px -120px teal inset,
+            0 -220px 70px -120px yellowgreen inset,
+            0 -280px 70px -120px gold inset;
+    animation: background 800ms infinite alternate,
+    rotateWithOrigin 2000ms linear 16600ms infinite;
+}
+
+.circle span {
+    font-family: Ultra;
+    font-size: 40px;
+    color: #FFFFFF;
+
+    animation: color1 500ms infinite alternate;
+}
+
+
+
+
+.circle1 {
+    position: absolute;
+    top: 0px;
+    left: 90px;
+    width: 20px;
+    height: 20px;
+    background: rgb(255, 255, 255);
+        
+        animation: background2 500ms infinite alternate;
+
+    border-radius: 50%;
+}
+
+.circle2 {
+    position: absolute;
+    top: 30px;
+    left: 150px;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+
+    animation: background2 500ms infinite alternate;
+}
+
+.circle3 {
+    position: absolute;
+    top: 80px;
+    left: 180px;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+
+    animation: background2 500ms infinite alternate;
+}
+
+.circle4 {
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+
+    animation: background2 500ms infinite alternate;
+}
+
+.circle5 {
+    position: absolute;
+    top: 150px;
+    left: 30px;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+
+    animation: background2 500ms infinite alternate;
+}
+
+.circle6 {
+    position: absolute;
+    top: 180px;
+    left: 90px;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+
+    animation: background2 500ms infinite alternate;
+}
+
+.circle7 {
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+
+    animation: background2 500ms infinite alternate;
+}
+
+.circle8 {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+
+    animation: background2 500ms infinite alternate;
+}
+
+.circle9 {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+
+    animation: background2 500ms infinite alternate;
+}
+
+
+                                                                    /**  Background circle     */
+
+.circle10 {
+    position: absolute;
+    top: 200px;
+    left: -40px;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+
+    animation: background2 500ms infinite alternate;
+}
+
+.circle11 {
+    position: absolute;
+    top: 400px;
+    left: -10px;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+
+    animation: background2 500ms infinite alternate;
+}
+
+.circle12 {
+    position: absolute;
+    top: 200px;
+    left: 430px;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+
+    animation: background2 500ms infinite alternate;
+}
+
+.circle13 {
+    position: absolute;
+    top: 80px;
+    left: 350px;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+
+    animation: background2 500ms infinite alternate;
+}
+
+.circle14 {
+    position: absolute;
+    top: 280px;
+    left: 30px;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+
+    animation: background2 500ms infinite alternate;
+}
+
+.circle15 {
+    position: absolute;
+    top: 50px;
+    left: 200px;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+
+    animation: background2 500ms infinite alternate;
+}
+
+.circle16 {
+    position: absolute;
+    top: 20px;
+    left: 450px;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+
+    animation: background2 500ms infinite alternate;
+}
+
+.circle17 {
+    position: absolute;
+    top: 20px;
+    left: 750px;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+
+    animation: background2 500ms infinite alternate;
+}
+
+.circle18 {
+    position: absolute;
+    top: 80px;
+    left: 850px;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+
+    animation: background2 500ms infinite alternate;
+}
+
+.circle19 {
+    position: absolute;
+    top: 200px;
+    left: 750px;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+
+    animation: background2 500ms infinite alternate;
+}
+
+.circle20 {
+    position: absolute;
+    top: 40px;
+    left: 960px;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+
+    animation: background2 500ms infinite alternate;
+}
+
+.circle21 {
+    position: absolute;
+    top: 200px;
+    left: 1220px;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+
+    animation: background2 500ms infinite alternate;
+}
+
+.circle22 {
+    position: absolute;
+    top: 400px;
+    left: 1230px;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+
+    animation: background2 500ms infinite alternate;
+}
+
+.circle23 {
+    position: absolute;
+    top: 320px;
+    left: 1170px;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+
+    animation: background2 500ms infinite alternate;
+}
+
+.circle24 {
+    position: absolute;
+    top: 30px;
+    left: 1170px;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+
+    animation: background2 500ms infinite alternate;
+}
+
+.santa {
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: -100px;
+
+    z-index: 5;
+}
+
+.dwarf {
+    display: none;
+    position: absolute;
+    top: 350px;
+    left: 120px;
+
+    z-index: 5;
+
+}
+
+                                                                /**  Loudspeakers   */
+.loudspeakers {
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-end;
+}
+
+
+.loudspeakers1 {
+    position: relative;
+    display: inline-block;
+    height: 500px;
+    width: 300px;
+    
+}
+
+.loudspeakers1 .subwoofer1 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    border-radius: 50%;
+    width: 120px;
+    height: 110px;
+    top: 140px;
+    left: 65px;
+
+    z-index: 3;
+
+
+    animation: changeBgColor 3000ms linear infinite alternate,
+                rotateWithOrigin 3000ms linear 1000ms infinite,
+                scaleAnimate 450ms linear 1000ms infinite;
+}
+
+.loudspeakers1 .subwoofer2 {
+    position: absolute;
+    top: 250px;
+    left: 65px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    border-radius: 50%;
+    width: 120px;
+    height: 110px;
+
+    z-index: 2;
+
+
+    animation: changeBgColor 3000ms linear infinite alternate,
+            rotateWithOrigin 3000ms linear 1000ms infinite,
+            scaleAnimate 375ms linear 1000ms infinite;
+}
+
+.loudspeakers1 .subwoofer3 {
+    position: absolute;
+    top: 365px;
+    left: 65px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    border-radius: 50%;
+    width: 120px;
+    height: 110px;
+
+     animation: changeBgColor 3000ms linear infinite alternate,
+            rotateWithOrigin 3000ms linear 1000ms infinite,
+            scaleAnimate 325ms linear 1000ms infinite;
+} 
+
+
+
+.loudspeakers2 {
+    position: relative;
+    display: inline-block;
+    height: 500px;
+    width: 300px;
+    
+}
+
+
+.loudspeakers2 .subwoofer1 {
+    position: absolute;
+    top: 140px;
+    left: 45px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    border-radius: 50%;
+    width: 120px;
+    height: 110px;
+
+    z-index: 3;
+    
+
+     animation: changeBgColor 3000ms linear infinite alternate,
+            rotateWithOrigin 3000ms linear 1000ms infinite,
+            scaleAnimate 450ms linear 1000ms infinite;
+} 
+
+.loudspeakers2 .subwoofer2 {
+    position: absolute;
+    top: 255px;
+    left: 45px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    border-radius: 50%;
+    width: 120px;
+    height: 110px;
+
+    z-index: 2;
+
+    animation: changeBgColor 3000ms linear infinite alternate,
+            rotateWithOrigin 3000ms linear 1000ms infinite,
+            scaleAnimate 375ms linear 1000ms infinite;
+}
+
+.loudspeakers2 .subwoofer3 {
+    position: absolute;
+    top: 370px;
+    left: 45px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    border-radius: 50%;
+    width: 120px;
+    height: 110px;
+
+    animation: changeBgColor 3000ms linear infinite alternate,
+            rotateWithOrigin 3000ms linear 1000ms infinite,
+            scaleAnimate 325ms linear 1000ms infinite;
+}
+
+
+                                                                    /**   Animate     */
+ @keyframes changeBgColor {
+     0% {
+         background-color: red;
+     }
+
+     16% {
+         background-color: orange;
+     }
+
+     32% {
+         background-color: yellow;
+     }
+
+     48% {
+         background-color: green;
+     }
+
+     64% {
+         background-color: skyblue;
+     }
+
+     80% {
+         background-color: blue;
+     }
+
+     100% {
+         background-color: purple;
+     }
+ }
+
+ @keyframes rotateWithOrigin {
+     0% {
+         transform: rotate3d(0, 0, 1, 0deg);
+     }
+
+     100% {
+         transform: rotate3d(0, 0, 1, 360deg);
+     }
+ }
+
+
+
+@keyframes scaleAnimate {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.25);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes scaleAnimate2 {
+    0% {
+        transform: scale(0.9);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0.9);
+    }
+}
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+@keyframes background {
+    50% {
+        background: darkviolet;
+        box-shadow: 0 -140px 70px -120px mediumorchid inset,
+            0 -210px 70px -120px teal inset,
+            0 -280px 70px -120px plum inset;
+    }
+}
+
+@keyframes background2 {
+    50% {
+        background: rgba(255, 255, 255, 0);
+    }
+}
+
+@keyframes color1 {
+    50% {
+        color: rgba(255, 255, 255, 0);
+    }
+}
+
+@-webkit-keyframes shiny-btn1 {
+    0% {
+        -webkit-transform: scale(0) rotate(45deg);
+        opacity: 0;
+    }
+
+    80% {
+        -webkit-transform: scale(0) rotate(45deg);
+        opacity: 0.5;
+    }
+
+    81% {
+        -webkit-transform: scale(4) rotate(45deg);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scale(50) rotate(45deg);
+        opacity: 0;
+    }
+}
+
+@keyframes translateAnimateY {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes translateAnimateX {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
