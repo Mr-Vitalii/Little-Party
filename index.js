@@ -3,6 +3,13 @@
 function startParty() {
     const block = document.querySelector('.block');
     const button = document.getElementsByTagName('button');
+    const lightMusic = document.querySelector(".super-container");
+    const circle = document.querySelector(".circle");
+
+    lightMusic.setAttribute("style", "animation: gradient 350ms ease 16400ms infinite");
+    circle.setAttribute("style", "animation: background 800ms infinite alternate,rotateWithOrigin 2000ms linear 16600ms infinite");
+
+
     return block.style.display = "none", button.style.display = "none";
 }
 
